@@ -1,0 +1,256 @@
+/*!
+ * Start Bootstrap - The Big Picture (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+  font-family: "Comic Sans MS";
+}
+
+.full {
+  background: url(http://zibrato.com/wp-content/uploads/2015/12/Creative-Facebook-Graphics-Design-Wallpaper.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+nav {
+  width : 1700px;
+  float : left;
+  -webkit-transition : 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+  -moz-transition : 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display     : inline-block;
+  margin-left : auto;
+  width       : 60px;
+  padding     : 18px 0;
+  background-color: rgba(100,100,100,.3);
+  font-size : 30px;
+  color : #fff;
+  text-align : center;
+  cursor : pointer;
+}
+
+li {
+  list-style-type : none;
+  border-top    : 1px solid #FFF;
+  border-bottom : 1px solid #ddd;
+  background-color: #f4f5f6;
+  background-size : 200% 100%;
+  background-position : 90% 0px;
+  -webkit-transition : 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+  -moz-transition : 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+a.one {
+  display    : block;
+  padding    : 25px 0;
+  color      : #454545;
+  text-align : center;
+  font-family: 'Source Code Pro', sans-serif;
+  text-decoration: none;
+  -webkit-transition : color .1s;
+  -moz-transition : color .1s;
+}
+
+a.one:hover {
+  color : #fff;
+  -webkit-transition : color .1s;
+  -moz-transition : color .1s;
+}
+
+li:nth-child(1) {
+  border-top : none;
+  background-image : -webkit-linear-gradient(left, #78cdce 0%, #78cdce 50%, #f4f5f6 0%);
+  background-image : -moz-linear-gradient(left, #78cdce 0%, #78cdce 50%, #f4f5f6 0%);
+}
+
+li:nth-child(2) {
+  background-image : -webkit-linear-gradient(left, #f16767 0%, #f16767 50%, #f4f5f6 0%);
+  background-image : -moz-linear-gradient(left, #f16767 0%, #f16767 50%, #f4f5f6 0%);
+}
+
+li:nth-child(3) {
+  background-image : -webkit-linear-gradient(left, #f5ee32 0%, #f5ee32 50%, #f4f5f6 0%);
+  background-image : -moz-linear-gradient(left, #f5ee32 0%, #f5ee32 50%, #f4f5f6 0%);
+}
+
+li:nth-child(4) {
+  background-image : -webkit-linear-gradient(left, #97cc69 0%, #97cc69 50%, #f4f5f6 0%);
+  background-image : -moz-linear-gradient(left, #97cc69 0%, #97cc69 50%, #f4f5f6 0%);
+}
+
+li:nth-child(5) {
+  background-image : -webkit-linear-gradient(left, #507abd 0%, #507abd 50%, #f4f5f6 0%);
+  background-image : -moz-linear-gradient(left, #507abd 0%, #507abd 50%, #f4f5f6 0%);
+}
+
+li:nth-child(6) {
+  background-image : -webkit-linear-gradient(left, #6b408e 0%, #6b408e 50%, #f4f5f6 0%);
+  background-image : -moz-linear-gradient(left, #6b408e 0%, #6b408e 50%, #f4f5f6 0%);
+  border-bottom : none;
+}
+
+
+li:hover {
+  -webkit-transition : 0.3s cubic-bezier(0.175, 0.285, 0.32,1.0) all;
+  -moz-transition : 0.3s cubic-bezier(0.175, 0.285, 0.32,1.0) all;
+  background-position : 0% 0%;
+}
+
+#toggle:checked ~ nav {
+  margin-left:  -240px;
+  -webkit-transition : 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+  -moz-transition : 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+#overview
+{
+	background-color: #fffaf0;
+	opacity: 0.7;
+	min-height: 100%;
+	margin: auto;
+    width: 100%;
+
+}
+#overview img
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.two:hover
+{
+	opacity: 0.5;
+}
+#desc
+{
+  margin-auto;
+  align-content: center;
+}
